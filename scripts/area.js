@@ -40,3 +40,28 @@ const length = getValue('rectangle-length');
 const area = width * length;
 SetValue('rectangle-area',area)
 }
+function calculateParallelogramArea(){
+const base = getValue('parallelogram-base');
+const height = getValue('parallelogram-height');
+const area = base * height;
+SetValue('parallelogram-area',area)
+}
+function calculateRhombusArea(){
+const d1 = getValue('rhombus-d1');
+const d2 = getValue('rhombus-d2');
+const area = 0.5 * d1 * d2;
+SetValue('rhombus-area',area)
+}
+function calculatePentagonArea(){
+const p = getValue('pentagon-p');
+const b = getValue('pentagon-b');
+const area = 0.5 * p * b;
+SetValue('pentagon-area',area)
+}
+function calculateEllipseArea(){
+const a = getValue('ellipse-a');
+const b = getValue('ellipse-b');
+const area = 3.1416 * a * b;
+const area1 =area.toFixed(2);
+SetValue('ellipse-area',area1)
+}
